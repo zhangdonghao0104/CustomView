@@ -1,0 +1,65 @@
+ext {
+    // 存储公共依赖
+    dependenciesID = [
+            //协程
+            "core_ktx"                     : 'androidx.core:core-ktx:1.2.0',
+            "appcompat"                    : 'androidx.appcompat:appcompat:1.4.0',
+            "material"                     : 'com.google.android.material:material:1.5.0+',
+            "constraintlayout"             : 'androidx.constraintlayout:constraintlayout:2.0.1',
+            "card"                         : 'androidx.cardview:cardview:1.0.0',
+
+            // lifecycle
+            "repeatOnLifecycle"            : "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0-alpha01",
+            "lifecycle-common-java8"       : 'androidx.lifecycle:lifecycle-common-java8:2.2.0',
+            "lifecycle-extensions"         : 'androidx.lifecycle:lifecycle-extensions:2.2.0',
+            // DefaultLifecycleObserver
+            "lifecycle_commom"             : "androidx.lifecycle:lifecycle-common-java8:2.2.0",
+
+            //jetPack viewModel
+            "lifecycle-viewmodel-ktx"      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0",
+            "fragment-ktx"                 : "androidx.fragment:fragment-ktx:1.3.1",
+            "activity-ktx"                 : 'androidx.activity:activity-ktx:1.2.3',
+
+            //liveData
+            "lifecycle-livedata-ktx"       : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0",
+            //unPeek-liveData TODO 参考文档:https://github.com/KunMinX/UnPeek-LiveData
+            "unpeek-livedata"              : 'com.kunminx.archi:unpeek-livedata:4.4.1-beta1',
+
+            // retrofit2
+            "retrofit2"                    : "com.squareup.retrofit2:retrofit:2.9.0",
+
+            // OkHttp
+            "okhttp"                       : "com.squareup.okhttp3:okhttp:3.12.1",
+            // OkHttp 拦截器
+            "logging-interceptor"          : "com.squareup.okhttp3:logging-interceptor:3.10.0",
+
+            // Glide
+//            "glide"                        : "com.github.bumptech.glide:glide:4.8.0",
+//            "glide-compiler"               : "com.github.bumptech.glide:compiler:4.8.0",
+
+            // gson
+            "converter-gson"               : "com.squareup.retrofit2:converter-gson:2.9.0",
+
+            //BaseQuickAdapter
+            // TODO 参考文档: https://blog.csdn.net/weixin_44819566/article/details/112789000
+            // TODO 官方文档: http://www.recyclerview.org/
+            "BaseRecyclerViewAdapterHelper": 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.7',
+
+            //RxBinDing
+            "rxbinding2"                   : 'com.jakewharton.rxbinding2:rxbinding:2.0.0',
+
+            //郭霖申请权限:https://blog.csdn.net/guolin_blog/article/details/106181780
+            "permissionx"                  : 'com.permissionx.guolindev:permissionx:1.3.0',
+
+            // http://airbnb.io/lottie/#/android
+            "lottie"                       : "com.airbnb.android:lottie:3.6.0",
+
+            // 官方地址:https://github.com/coil-kt/coil/
+            "coil"                         : "io.coil-kt:coil:1.4.0",
+
+            // 2022-4-28
+            "navigation-fragment"          : "androidx.navigation:navigation-fragment-ktx:2.2.2",
+            "navigation-ui"                : "androidx.navigation:navigation-ui-ktx:2.2.2",
+
+    ]
+}
