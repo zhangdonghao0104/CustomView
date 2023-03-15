@@ -2,17 +2,13 @@ package com.zdh.custom;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-import androidx.databinding.ViewDataBinding;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
-import com.zdh.custom.board.BoardActivity;
 import com.zdh.custom.databinding.ActivityMainBinding;
-import com.zdh.custom.spider.SimpleActivity;
+import com.zdh.custom.ui.CoordinatorToolbarActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,15 +23,21 @@ public class MainActivity extends AppCompatActivity {
         binding.bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SimpleActivity.class));
+//                startActivity(new Intent(MainActivity.this, SimpleActivity.class));
             }
         });
         binding.bt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, BoardActivity.class));
+//                startActivity(new Intent(MainActivity.this, BoardActivity.class));
             }
         });
 
+
+
+    }
+    public void coordinatorLayout(View view) {
+
+        startActivity(new Intent(MainActivity.this, CoordinatorToolbarActivity.class));
     }
 }
